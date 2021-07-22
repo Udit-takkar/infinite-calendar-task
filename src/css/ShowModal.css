@@ -1,0 +1,32 @@
+.modal__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #000000;
+  opacity: 0.9;
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  cursor: pointer;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  cursor: pointer;
+}

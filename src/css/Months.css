@@ -1,0 +1,13 @@
+.Months__container {
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Months__container::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.Months__container {
+  scrollbar-width: none;
+}

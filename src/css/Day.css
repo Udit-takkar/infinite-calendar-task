@@ -1,0 +1,20 @@
+.day__container {
+  max-height: 150px;
+}
+
+.day {
+  position: relative;
+  width: calc(100% / 7);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: center;
+  border: 1px solid #ebebeb;
+}
+
+.day__image {
+  height: 60%;
+  width: 90%;
+}

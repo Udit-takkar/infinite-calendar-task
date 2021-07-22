@@ -1,0 +1,32 @@
+.codes__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.code {
+  border-radius: 50%;
+  padding: 0.25rem;
+  margin: 4px;
+  /* width: 35px; */
+  font-size: 15px;
+  text-align: center;
+}
+
+.Cu {
+  background-color: #ffc0cb;
+}
+
+.Pr {
+  background-color: #c1dffe;
+}
+
+.HC {
+  background-color: #ffc0cb;
+}
+
+.C {
+  background-color: #fff6e8;
+}
+.DC {
+  background-color: #d5ffe2;
+}

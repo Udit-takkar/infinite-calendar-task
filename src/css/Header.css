@@ -1,0 +1,24 @@
+.Header__textContainer {
+  font-family: "Poppins";
+  font-size: 25px;
+  display: flex;
+
+  border-bottom: 1px solid #333;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#my {
+  color: #51bcff;
+}
+
+.Header__date__Year {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.Header__heading {
+  margin-left: 0.5rem;
+}
+.Header__Date {
+  margin-right: 0.5rem;
+}

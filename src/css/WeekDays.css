@@ -1,0 +1,16 @@
+.WeekDays_wrapper {
+  display: flex;
+  border-bottom: 1px solid #333;
+  padding: 1rem 0;
+  margin: auto;
+}
+
+.WeekDays_wrapper_day {
+  width: calc(100% / 7);
+  text-align: center;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: auto;
+}
