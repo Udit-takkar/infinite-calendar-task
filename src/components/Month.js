@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { format } from "date-fns";
+import React from "react";
 import Day from "./Day";
 import "../css/Month.css";
 import { v4 as uuidv4 } from "uuid";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { getPosts, fetchPosts } from "../features/calendar";
 
 function Month({ month, top, date, visibileDate }) {
   const posts = useSelector(getPosts);
   return (
     <div
+      className="Month__wrapper"
       style={{
         transform: `translateY(${top})`,
-        position: "absolute",
-        width: "100%",
-        height: "900px",
       }}
     >
       <div className="Month_container">
@@ -23,7 +20,7 @@ function Month({ month, top, date, visibileDate }) {
             <div
               className="week"
               style={{ height: `calc(100% / 5)` }}
-              key={index}
+              key={uuidv4()}
             >
               {week.map((day, index) => {
                 return (

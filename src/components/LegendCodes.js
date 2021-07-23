@@ -1,5 +1,8 @@
 import React from "react";
 import "../css/LegendCodes.css";
+import { v4 as uuidv4 } from "uuid";
+import { getModalState } from "../features/modal";
+import { useSelector, useDispatch } from "react-redux";
 
 function LegendCodes({ typeofday }) {
   const HAIR_CUT = "hair cut";
@@ -7,6 +10,7 @@ function LegendCodes({ typeofday }) {
   const HAIR_COLOR = "hair color";
   const CLARIFYING = "clarifying";
   const DEEP_CONDITIONING = "deep conditioning";
+  const isModalActive = useSelector(getModalState);
 
   const Codes = [];
   typeofday.forEach((day) => {
@@ -25,7 +29,14 @@ function LegendCodes({ typeofday }) {
   return (
     <div className="codes__container">
       {Codes.map((code) => {
-        return <div className={`${code} code `}>{code}</div>;
+        return (
+          <div
+            key={uuidv4()}
+            className={`${code} ${isModalActive ? "Modal-Code" : "code"}   `}
+          >
+            {code}
+          </div>
+        );
       })}
     </div>
   );

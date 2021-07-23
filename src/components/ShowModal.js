@@ -83,19 +83,20 @@ function ShowModal() {
           icon={faArrowLeft}
         />
       </span>
-
-      {loding === true ? (
-        "Loading ..."
-      ) : post ? (
-        <Post
-          id={post.id}
-          rating={post.rating}
-          photo={post.media[0].mediaurl}
-          text={post.text}
-          date={post.calendardatetime}
-          typeofday={post.typeofday}
-        />
-      ) : null}
+      <div className="Modal__post__container">
+        {loding === true ? (
+          "Loading ..."
+        ) : post ? (
+          <Post
+            id={post.id}
+            rating={post.rating}
+            photo={post.media[0].mediaurl}
+            text={post.text}
+            date={post.calendardatetime}
+            typeofday={post.typeofday}
+          />
+        ) : null}
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 function Rating({ rating }) {
   const stars = [];
@@ -8,7 +9,7 @@ function Rating({ rating }) {
   return (
     <div>
       {stars.map((star) => {
-        return <span>{star}</span>;
+        return <span key={uuidv4()}>{star}</span>;
       })}
     </div>
   );

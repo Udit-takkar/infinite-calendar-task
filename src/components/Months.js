@@ -7,6 +7,8 @@ import { v4 as uuidv4 } from "uuid";
 import { getUpdatedDate } from "../utils/UpdatedDate";
 
 import { checkCommonWeekToRemove } from "../utils/CheckCommonWeek";
+
+// const MONTH_HEIGHT = window.innerWidth >= 640 ? 1000 : 900;
 const MONTH_HEIGHT = 900;
 
 function Months({ date, updateDate }) {
@@ -18,7 +20,6 @@ function Months({ date, updateDate }) {
     const { current } = monthsContainer;
     current.scrollTop = (current.scrollHeight - current.clientHeight) / 2;
     halfMark.current = current.scrollHeight / MONTH_HEIGHT / 2;
-    console.log("half mark: ", halfMark.current);
   }, []);
 
   const handleScroll = (e) => {
@@ -42,7 +43,7 @@ function Months({ date, updateDate }) {
       className="Months__container"
       onScroll={(e) => handleScroll(e)}
     >
-      <div style={{ height: "500000px", position: "relative" }}>
+      <div style={{ height: "900000px", position: "relative" }}>
         <Month
           top={`${(offset + halfMark.current - 1) * MONTH_HEIGHT}px`}
           month={checkCommonWeekToRemove(

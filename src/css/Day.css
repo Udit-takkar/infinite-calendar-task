@@ -18,3 +18,21 @@
   height: 60%;
   width: 90%;
 }
+
+@media only screen and (max-width: 1024px) {
+  .day__image {
+    width: 100%;
+  }
+  .day__container {
+    max-height: 120px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .day {
+    height: 140px;
+  }
+  .day__container {
+    max-height: 110px;
+  }
+}

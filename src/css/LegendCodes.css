@@ -1,9 +1,18 @@
 .codes__container {
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 
 .code {
+  border-radius: 50%;
+  padding: 0.25rem;
+  margin: 4px;
+  /* width: 35px; */
+  font-size: 15px;
+  text-align: center;
+}
+.Modal-Code {
   border-radius: 50%;
   padding: 0.25rem;
   margin: 4px;
@@ -29,4 +38,49 @@
 }
 .DC {
   background-color: #d5ffe2;
+}
+
+@media only screen and (max-width: 1024px) {
+  .code {
+    width: 100%;
+    font-size: 10px;
+    padding: 0.1rem;
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .code {
+    font-size: 10px;
+    padding: 0.15rem;
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .code {
+    font-size: 10px;
+    padding: 0.1rem;
+    width: 15px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .code {
+    font-size: 8px;
+    padding: 0.12rem;
+    width: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .code {
+    font-size: 8px;
+    padding: 0.15rem;
+
+    margin: 2px;
+  }
+  .codes__container {
+    justify-content: center;
+  }
 }

@@ -6,8 +6,13 @@
   height: 100vh;
   z-index: 10;
   background-color: #000000;
-  opacity: 0.9;
+  /* opacity: 0.95; */
   color: white;
+}
+.Modal__post__container {
+  height: 100vh;
+  display: flex;
+  place-items: center;
 }
 
 .close-btn {
@@ -29,4 +34,47 @@
   top: 50%;
   left: 10%;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Modal__post__container {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .Modal__post__container {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .arrow-right {
+    position: absolute;
+    right: 5%;
+  }
+  .arrow-left {
+    position: absolute;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .arrow-right {
+    position: absolute;
+    top: 95%;
+  }
+  .arrow-left {
+    position: absolute;
+
+    top: 95%;
+  }
+  .Modal__post__container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
 }
