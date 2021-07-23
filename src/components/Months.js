@@ -8,7 +8,6 @@ import { getUpdatedDate } from "../utils/UpdatedDate";
 
 import { checkCommonWeekToRemove } from "../utils/CheckCommonWeek";
 
-// const MONTH_HEIGHT = window.innerWidth >= 640 ? 1000 : 900;
 const MONTH_HEIGHT = 900;
 
 function Months({ date, updateDate }) {

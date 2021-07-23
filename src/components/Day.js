@@ -24,7 +24,7 @@ const months = [
   "Dec",
 ];
 
-function Day({ day, date, index, posts }) {
+function Day({ day, date, index, posts, visibileDate }) {
   const [showPost, setShowPost] = useState(false);
   const [calendarPost, setPost] = useState({});
   const dispatch = useDispatch();
@@ -43,7 +43,7 @@ function Day({ day, date, index, posts }) {
   }, []);
 
   function dayFontWeight(D) {
-    if (isSameMonth(D, date)) {
+    if (isSameMonth(D, visibileDate)) {
       return 700;
     } else {
       return 200;

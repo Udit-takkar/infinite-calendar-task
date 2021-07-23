@@ -30,6 +30,7 @@ function Month({ month, top, date, visibileDate }) {
                     posts={posts}
                     date={date}
                     index={index}
+                    visibileDate={visibileDate}
                   />
                 );
               })}
